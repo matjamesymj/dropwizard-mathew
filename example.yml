@@ -25,6 +25,9 @@ database:
 #    port: 8080
 
 server:
+  connector:
+    type: http
+    port: 8080
 #  softNofileLimit: 1000
 #  hardNofileLimit: 1000
   applicationConnectors:
@@ -34,6 +37,7 @@ server:
       port: 8443
       keyStorePath: example.keystore
       keyStorePassword: example
+
     #this requires the alpn-boot library on the JVM's boot classpath
     #- type: h2
     #  port: 8445
